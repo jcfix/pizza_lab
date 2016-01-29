@@ -18,3 +18,18 @@ Pizza.prototype.priceCalculator = function(){
     return totalPrice + 6 * this.quantity;
   }
 };
+
+
+// User Logic
+$(document).ready(function(){
+  // On form submit, set qty and size = user input
+  $("form.btn").submit(event) {
+    var pizzaSize = $("select#size").val();
+    var quantity = $("input#quantity").val();
+
+
+
+
+  event.preventDefault();
+  });
+});
