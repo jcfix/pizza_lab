@@ -15,7 +15,7 @@ $ open index.html
 
 OR
 
-Open open jcfix.github.io/pizza_lab in browser.
+Open open http://www.jcfix.github.io/pizza_lab in browser.
 Enjoy!
 
 ## Technologies Used
