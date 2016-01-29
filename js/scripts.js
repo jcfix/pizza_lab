@@ -11,7 +11,9 @@ Pizza.prototype.priceCalculator = function(){
 
   if (this.pizzaSize === "small") {
     return totalPrice * this.quantity;
-  };
+  } else if (this.pizzaSize === "medium") {
+    return totalPrice + 4 * this.quantity;
+  }
 
 
 };
