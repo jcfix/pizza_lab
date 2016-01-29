@@ -1,7 +1,14 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
+body {
+  background: url("http://pre13.deviantart.net/47d0/th/pre/i/2013/126/b/7/science_wizard_s_lab_by_cry_murder-d64cqpd.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+
 .container {
-  background: #4E6C8E;
+  background: #58A5AE;
+  background: rgba(88, 165, 174, 0.8);
+
   margin-top: 5%;
   margin-bottom: 5%;
   margin-left: 30%;
@@ -12,21 +19,16 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.jumbotron h1 {
+.jumbotron {
   color: #E56450;
   text-align: center;
 }
 
-body {
-  background: url("http://pre13.deviantart.net/47d0/th/pre/i/2013/126/b/7/science_wizard_s_lab_by_cry_murder-d64cqpd.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
+.checkbox label {
+  padding-right: 15px;
+  padding-bottom: 4px;
 }
 
-
-
-.btn {
-  margin-bottom: 20px;
-}
 
 #results {
   display: none;
