@@ -1,5 +1,5 @@
-# Pizza Shop
-##### A pizza-price calculator for a fictional pizzeria.
+# Pizza Laboratory
+##### A laboratory where the user can see the price for any pizza they create based on the provided options.
 
 #### By Jessica Fix
 
