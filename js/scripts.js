@@ -36,6 +36,10 @@ $(document).ready(function(){
 
     //Add each checked item with veg class to the vegToppings array
 
+    var vegToppings = $("input.veg:checkbox:checked").each(function(){
+      newPizza.vegToppings.push(vegToppings);
+    });
+
     //Add each checked item with meat class to the meatToppings array
 
 
