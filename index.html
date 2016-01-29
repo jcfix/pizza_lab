@@ -12,64 +12,55 @@
   </head>
   <body>
     <div class="container">
-      <div id="background">
-        <div class="jumbotron">
-          <h1>Pizza Lab</h1>
-        </div>
+      <div class="jumbotron">
+        <h1>Pizza Lab</h1>
+      </div>
 
-        <h3>Welcome to your very own, personal pizza laboratory. Here you are the scientist, able to tinker and tamper with ingredients to your heart's content. Will you construct a masterpiece or will what you create, simply be madness?</h3>
+      <h3>Welcome to your very own, personal pizza laboratory. Here you are the scientist, able to tinker and tamper with ingredients to your heart's content. Will you construct a masterpiece or will what you create, simply be madness?</h3>
 
-        <hr>
+      <hr>
 
+      <!-- <form id="orderForm"> -->
         <h4>Choose your Crust</h4>
-
-
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                Thin Crust
-              </label>
-            </div>
-
-            <div class="radio">
-              <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                Thick Crust
-              </label>
-            </div>
-
-            <div class="radio">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-              Gluten-free Crust
-            </label>
-          </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="oneRadio" id="optionsRadios1" value="option1" checked>
+            Thin Crust
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="oneRadio" id="optionsRadios2" value="option2">
+            Thick Crust
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="oneRadio" id="optionsRadios2" value="option2">
+            Gluten-free Crust
+          </label>
+        </div>
 
         <hr>
 
         <h4>Choose your Base</h4>
-
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            <input type="radio" name="twoRadio" id="optionsRadios1" value="option1" checked>
             Pesto
           </label>
         </div>
-
         <div class="radio">
           <label>
-            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            <input type="radio" name="twoRadio" id="optionsRadios2" value="option2">
             Marinara
           </label>
         </div>
 
-
         <hr>
-
+      <form id="orderForm">
         <h4>Choose your Cheese</h4>
-
         <div class="checkbox">
-
           <label>
           <input type="checkbox" class="cheese" value="blue-cheese">
           Blue Cheese
@@ -116,15 +107,12 @@
           <input type="checkbox" class="cheese" value="ricotta">
           Ricotta
           </label>
-
         </div>
 
         <hr>
 
         <h4>Choose your Fruits &amp; Veggies</h4>
-
         <div class="checkbox">
-
           <label>
           <input type="checkbox" class="veg"value="artichoke">
           Artichoke Hearts
@@ -234,13 +222,11 @@
           <input type="checkbox" class="veg"value="apple">
           Sauteed Apples
           </label>
-
         </div>
 
         <hr>
 
         <h4>Choose your Meat</h4>
-
         <div class="checkbox">
           <label>
           <input type="checkbox" class="meat"value="chicken">
@@ -276,41 +262,37 @@
           <input type="checkbox" class="meat"value="bacon">
           Smoked Bacon
           </label>
-
         </div>
 
         <hr>
 
-        <form>
-          <h4>Choose a size</h4>
-
-          <div class="form-group">
-            <select class="form-control" id="size" placeholder= "small, medium" required>
-              <option>--Select One--</option>
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-            </select>
-          </div>
-
-          <br>
-
-          <h4>Enter quantity</h4>
-
-          <div class="form-group">
-            <input type="number" class="form-control" id="quantity" placeholder="Enter a number" required>
-          </div>
-
-          <br>
-
-          <button type="submit" class="btn btn-danger">Calculate Price</button>
-
-        </form>
-        <div id="results">
-          <h2>Total $<span id="price"></span></h2>
-
+        <h4>Choose a size</h4>
+        <div class="form-group">
+          <select class="form-control" id="size" placeholder= "small, medium" required>
+            <option>--Select One--</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
         </div>
+
+        <br>
+
+        <h4>Enter quantity</h4>
+        <div class="form-group">
+          <input type="number" class="form-control" id="quantity" placeholder="Enter a number" required>
+        </div>
+
+        <br>
+
+        <button type="submit" id=getPrice class="btn btn-danger">Calculate Price</button>
+      </form>
+
+      <div id="results">
+        <h2>Total $<span id="price"></span></h2>
       </div>
+
+
     </div>
   </body>
 </html>
