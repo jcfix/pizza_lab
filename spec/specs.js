@@ -17,5 +17,9 @@ describe ('priceCalculator', function (){
     var testPizza = new Pizza ("medium", 1);
     expect(testPizza.priceCalculator()).to.equal(12)
   });
+  it('will return price for 1 large pizza with 0 toppings', function(){
+    var testPizza = new Pizza ("large", 1);
+    expect(testPizza.priceCalculator()).to.equal(14)
+  });
 
 });
