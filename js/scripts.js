@@ -1,3 +1,4 @@
+// Business Logic
 function Pizza (pizzaSize, quantity) {
   this.pizzaSize = pizzaSize;
   this.quantity = quantity;

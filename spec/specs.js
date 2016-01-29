@@ -8,6 +8,12 @@ describe('pizza', function(){
   });
 });
 
+describe ('priceCalculator', function (){
+  it ('will return price for 1 small pizza with 0 toppings', function (){
+    var testPizza = new Pizza ("small", 1)
+    expect(priceCalculator).to.equal(8)
+  });
+});
 
 //pizza object
 //pizza price calculator
