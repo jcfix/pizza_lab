@@ -41,7 +41,9 @@ $(document).ready(function(){
     });
 
     //Add each checked item with meat class to the meatToppings array
-
+    var meatToppings = $("input.meat:checkbox:checked").each(function(){
+      newPizza.meatToppings.push(meatToppings);
+    });
 
   event.preventDefault();
   });
