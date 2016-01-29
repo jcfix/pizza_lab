@@ -45,6 +45,10 @@ $(document).ready(function(){
       newPizza.meatToppings.push(meatToppings);
     });
 
+    //Runs priceCalculator function on the newPizza object
+    var pizzaPrice = newPizza.priceCalculator();
+  debugger;
+
   event.preventDefault();
   });
 });
