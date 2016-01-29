@@ -5,6 +5,7 @@ describe('pizza', function(){
     expect(testPizza.quantity).to.equal(1);
     expect(testPizza.vegTopping).to.eql([]);
     expect(testPizza.meatTopping).to.eql([]);
+    expect(testPizza.extraCheese).to.eql([]);
   });
 });
 

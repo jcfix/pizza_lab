@@ -4,10 +4,11 @@ function Pizza (pizzaSize, quantity) {
   this.quantity = quantity;
   this.vegTopping = [];
   this.meatTopping = [];
+  this.extraCheese = [];
 };
 
 Pizza.prototype.priceCalculator = function(){
-  var totalPrice = 8 + (this.vegTopping.length * 1.50) + (this.meatTopping.length * 2);
+  var totalPrice = 8 + (this.vegTopping.length * 1.50) + (this.meatTopping.length * 2) + (this.extraCheese.length * 2);
 
   if (this.pizzaSize === "small") {
     return totalPrice * this.quantity;
@@ -16,11 +17,4 @@ Pizza.prototype.priceCalculator = function(){
   } else if (this.pizzaSize === "large") {
     return totalPrice + 6 * this.quantity;
   }
-
 };
-
-
-
-// else if (this.pizzaSize === "large") {
-//   return totalPrice + 6 * this.quantiity;
-// }
