@@ -1,3 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+.container {
+  background: #4E6C8E;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 30%;
+  border-radius: 25px;
+  width: 750px;
+  padding: 40px;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+#background {
+  opacity: 0.6%;
+}
+
+.jumbotron h1 {
+  color: black;
+  text-align: center;
+}
+
+body {
+  background: url("http://pre13.deviantart.net/47d0/th/pre/i/2013/126/b/7/science_wizard_s_lab_by_cry_murder-d64cqpd.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+}
+
+
+
 .btn {
   margin-bottom: 20px;
 }
