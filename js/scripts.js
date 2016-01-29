@@ -13,7 +13,14 @@ Pizza.prototype.priceCalculator = function(){
     return totalPrice * this.quantity;
   } else if (this.pizzaSize === "medium") {
     return totalPrice + 4 * this.quantity;
+  } else if (this.pizzaSize === "large") {
+    return totalPrice + 6 * this.quantity;
   }
 
-
 };
+
+
+
+// else if (this.pizzaSize === "large") {
+//   return totalPrice + 6 * this.quantiity;
+// }
