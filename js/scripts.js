@@ -2,9 +2,9 @@
 function Pizza (pizzaSize, quantity) {
   this.pizzaSize = pizzaSize;
   this.quantity = quantity;
+  this.extraCheese = [];
   this.vegTopping = [];
   this.meatTopping = [];
-  this.extraCheese = [];
 };
 
 Pizza.prototype.priceCalculator = function(){
@@ -20,35 +20,41 @@ Pizza.prototype.priceCalculator = function(){
 };
 
 
-// User Logic
-$(document).ready(function(){
+$(document).ready(function() {
+
   // On form submit, set qty and size = user input
-  $("form.btn").submit(function(event) {
+  $("form#orderForm").submit(function(event) {
     var pizzaSize = $("select#size").val();
     var quantity = $("input#quantity").val();
+
     var newPizza = new Pizza(pizzaSize, quantity);
+    // debugger;
 
-  //Add each checked item with cheese class to the extraCheese array
-
-    var extraCheese = $("input.cheese:checkbox:checked").each(function(){
-      newPizza.extaCheese.push(extraCheese);
+    //Add each checked item with cheese class to the extraCheese array
+    var extraCheese = $("input.cheese:checkbox:checked").each(function() {
+      newPizza.extraCheese.push(extraCheese);
     });
 
     //Add each checked item with veg class to the vegToppings array
-
-    var vegToppings = $("input.veg:checkbox:checked").each(function(){
-      newPizza.vegToppings.push(vegToppings);
+    var vegTopping = $("input.veg:checkbox:checked").each(function() {
+      newPizza.vegTopping.push(vegTopping);
     });
 
     //Add each checked item with meat class to the meatToppings array
-    var meatToppings = $("input.meat:checkbox:checked").each(function(){
-      newPizza.meatToppings.push(meatToppings);
+    var meatTopping = $("input.meat:checkbox:checked").each(function() {
+      newPizza.meatTopping.push(meatTopping);
     });
 
     //Runs priceCalculator function on the newPizza object
     var pizzaPrice = newPizza.priceCalculator();
-  debugger;
 
-  event.preventDefault();
+
+    //prints price to page
+    $("#price").text(pizzaPrice);
+
+    //show results div
+    $("#results").show();
+
+    event.preventDefault();
   });
 });
