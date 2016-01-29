@@ -9,11 +9,13 @@ describe('pizza', function(){
 });
 
 describe ('priceCalculator', function (){
-  it ('will return price for 1 small pizza with 0 toppings', function (){
-    var testPizza = new Pizza ("small", 1)
+  it('will return price for 1 small pizza with 0 toppings', function (){
+    var testPizza = new Pizza ("small", 1);
     expect(testPizza.priceCalculator()).to.equal(8)
   });
-});
+  it('will return price for 1 medium pizza with 0 toppings', function(){
+    var testPizza = new Pizza ("medium", 1);
+    expect(testPizza.priceCalculator()).to.equal(12)
+  });
 
-//pizza object
-//pizza price calculator
+});
