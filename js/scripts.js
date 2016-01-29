@@ -47,7 +47,10 @@ $(document).ready(function() {
 
     $("#price").text(pizzaPrice);
 
-    $("#results").show();
+    $("#results").fadeIn(200);
+
+      // $("#results").addClass('animated zoomInLeft');
+
 
     event.preventDefault();
   });
