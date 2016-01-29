@@ -23,11 +23,20 @@ Pizza.prototype.priceCalculator = function(){
 // User Logic
 $(document).ready(function(){
   // On form submit, set qty and size = user input
-  $("form.btn").submit(event) {
+  $("form.btn").submit(function(event) {
     var pizzaSize = $("select#size").val();
     var quantity = $("input#quantity").val();
+    var newPizza = new Pizza(pizzaSize, quantity);
 
+  //Add each checked item with cheese class to the extraCheese array
 
+    var extraCheese = $("input.cheese:checkbox:checked").each(function(){
+      newPizza.extaCheese.push(extraCheese);
+    });
+
+    //Add each checked item with veg class to the vegToppings array
+
+    //Add each checked item with meat class to the meatToppings array
 
 
   event.preventDefault();
